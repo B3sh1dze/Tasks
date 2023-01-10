@@ -1,22 +1,30 @@
 ﻿// task 2.1
 int FirstNumber = 5;
 int SecondNumber = 6;
-char operation = '+';
+char operation = '-';
 if (operation == '-')
 {
-    Console.WriteLine(FirstNumber - SecondNumber);
+    int Result = FirstNumber - SecondNumber;
+    Console.WriteLine($"The substraction of these numbers is: {Result}");
 }
 else if (operation == '+')
 {
-    Console.WriteLine(FirstNumber + SecondNumber);
+    int Result = FirstNumber + SecondNumber;
+    Console.WriteLine($"The sum of these numbers is: {Result}");
 }
-if (operation == '/')
+else if (operation == '/')
 {
-    Console.WriteLine(FirstNumber / SecondNumber);
+    int Result = FirstNumber / SecondNumber;
+    Console.WriteLine($"The division if these numbers is: {Result}");
 }
 else if (operation == '*')
 {
-    Console.WriteLine(FirstNumber * SecondNumber);
+    int Result = FirstNumber * SecondNumber;
+    Console.WriteLine($"The multiplication if these numbers is: {Result}");
+}
+else
+{
+    Console.WriteLine("Invalid operation! please enter the valid operator!");
 }
 
 Console.WriteLine();
@@ -26,6 +34,7 @@ Console.WriteLine();
 
 int fingers = 5;
 bool IsFromChernobyl = fingers == 5 ? true : false;
+Console.WriteLine(fingers);
 Console.WriteLine(IsFromChernobyl);
 
 Console.WriteLine();
@@ -33,12 +42,13 @@ Console.WriteLine();
 
 int age = 21;
 bool IsAdult = age >= 18 ? true : false;
+Console.WriteLine(age);
 Console.WriteLine(IsAdult);
 
 Console.WriteLine();
 Console.WriteLine();
 
-string FirstName = "Guro";
+string FirstName = "Guro Beshidze";
 string FullName = "Guro Beshidze";
 string empty = "";
 string result = FirstName == FullName ? FullName : empty;
