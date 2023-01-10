@@ -33,7 +33,7 @@ Console.WriteLine();
 // task 2.2
 
 int fingers = 5;
-bool IsFromChernobyl = fingers == 5 ? true : false;
+bool IsFromChernobyl = (fingers == 5) ? true : false;
 Console.WriteLine(fingers);
 Console.WriteLine(IsFromChernobyl);
 
@@ -41,7 +41,7 @@ Console.WriteLine();
 Console.WriteLine();
 
 int age = 21;
-bool IsAdult = age >= 18 ? true : false;
+bool IsAdult = (age >= 18) ? true : false;
 Console.WriteLine(age);
 Console.WriteLine(IsAdult);
 
@@ -51,7 +51,7 @@ Console.WriteLine();
 string FirstName = "Guro Beshidze";
 string FullName = "Guro Beshidze";
 string empty = "";
-string result = FirstName == FullName ? FullName : empty;
+string result = (FirstName == FullName) ? FullName : empty;
 Console.WriteLine(result);
 
 Console.WriteLine();
