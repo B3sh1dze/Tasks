@@ -1,7 +1,6 @@
 ﻿int computerWins = 0;
 int playersWins = 0;
 string[] moves = { "rock", "paper", "scissors" };
-char[] charMoves = {'r','p','s'};
 while (computerWins != 3 && playersWins !=3)
 {
     Console.Write("Please enter the character you want from('r','s','p'): ");
@@ -13,7 +12,6 @@ while (computerWins != 3 && playersWins !=3)
     }
     string playerMove = moves[0];
     Console.WriteLine($"Player's move is: {playerMove}");
-    // generate random numbers to show computer's move
     var random = new Random();
     int randomNumber = random.Next(0, 3);
     string computersMove = moves[randomNumber];
