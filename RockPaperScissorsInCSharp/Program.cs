@@ -1,28 +1,29 @@
 ﻿int computerWins = 0;
 int playersWins = 0;
 string[] moves = { "rock", "paper", "scissors" };
-while (true)
+char[] charMoves = {'r','p','s'};
+while (computerWins != 3 && playersWins !=3)
 {
     Console.Write("Please enter the character you want from('r','s','p'): ");
-    char playersInput = Convert.ToChar(Console.ReadLine());
-    if (playersInput != 'r' && playersInput != 's' && playersInput != 'p')
+    string playersInput = Console.ReadLine();
+    if (playersInput != "r" && playersInput != "s" && playersInput != "p")
     {
         Console.WriteLine("wrong input! please enter the correct character! ");
         continue;
     }
-    string playerMove = moves[playersInput - 'r'];
+    string playerMove = moves[0];
     Console.WriteLine($"Player's move is: {playerMove}");
     // generate random numbers to show computer's move
     var random = new Random();
     int randomNumber = random.Next(0, 3);
     string computersMove = moves[randomNumber];
     Console.WriteLine($"computer's move: {computersMove}");
-    if (playersInput == 'r' && computersMove == "scissors" || playersInput == 's' && computersMove == "paper" || playersInput == 'p' && computersMove == "rock") 
+    if (playersInput == "r" && computersMove == "scissors" || playersInput == "r" && computersMove == "paper" || playersInput == "r" && computersMove == "rock") 
     {
         Console.WriteLine("player wins!");
         playersWins++;
     }
-    else if(playersInput == 'r' && computersMove == "rock" || playersInput == 's' && computersMove == "scissors" || playersInput == 'p' && computersMove == "paper")
+    else if(playersInput == computersMove )
     {
         Console.WriteLine("It's a tie!");
     }
@@ -33,14 +34,5 @@ while (true)
     }
     Console.WriteLine($"computer's score: {computerWins}");
     Console.WriteLine($"player's's score: {playersWins}");
-    if (computerWins == 3)
-    {
-        Console.WriteLine("computer wins the game!!!");
-        break;
-    }
-    else if(playersWins == 3)
-    {
-        Console.WriteLine("player wins the game!!!");
-        break;
-    }
 }
+Console.WriteLine(playersWins == 3 ? "player wins!" : "Computer wins!");
