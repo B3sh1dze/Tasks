@@ -54,4 +54,4 @@ else
     Console.WriteLine("wrong answer");
     Console.WriteLine($"correct is: {answerOfThird[0]}");
 }
-Console.WriteLine($"Final score: {correctAnswers}");
+Console.WriteLine($"Final score: {correctAnswers} from 3");
