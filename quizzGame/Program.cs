@@ -22,58 +22,5 @@ for(int i = 0; i < questions.Length; i++)
         Console.WriteLine("wrong answer. ");
         Console.WriteLine($"correct answer is: {correctAnsswers[i]}");
     }
-    Console.WriteLine($"score is: {counter} out of {questions.Length}");
 }
 Console.WriteLine($"Final score is: {counter} out of {questions.Length}");
-
-
-
-//Console.WriteLine(questions[0]);
-//foreach (string answer in answerOfFirst)
-//{
-//    Console.WriteLine(answer);
-//}
-//char playerInput = Convert.ToChar(Console.ReadLine());
-//if(playerInput == correctAnswerOfFirst[0])
-//{
-//    Console.WriteLine("Correct answer");
-//    correctAnswers++;
-//}
-//else
-//{
-//    Console.WriteLine("wrong answer");
-//    Console.WriteLine($"correct is: {answerOfFirst[0]}");
-//}
-//Console.WriteLine(questions[1]);
-//foreach (string answer in answerOfSecond)
-//{
-//    Console.WriteLine(answer);
-//}
-//char playerInput2 = Convert.ToChar(Console.ReadLine());
-//if (playerInput2 == correctAnswerOfSecond[0])
-//{
-//    Console.WriteLine("Correct answer");
-//    correctAnswers++;
-//}
-//else
-//{
-//    Console.WriteLine("wrong answer");
-//    Console.WriteLine($"correct is: {answerOfSecond[0]}");
-//}
-//Console.WriteLine(questions[2]);
-//foreach (string answer in answerOfThird)
-//{
-//    Console.WriteLine(answer);
-//}
-//char playerInput3 = Convert.ToChar(Console.ReadLine());
-//if (playerInput3 == correctAnswerOfThird[0])
-//{
-//    Console.WriteLine("Correct answer");
-//    correctAnswers++;
-//}
-//else
-//{
-//    Console.WriteLine("wrong answer");
-//    Console.WriteLine($"correct is: {answerOfThird[0]}");
-//}
-//Console.WriteLine($"Final score: {correctAnswers} from 3");
