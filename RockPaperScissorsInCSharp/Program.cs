@@ -34,3 +34,4 @@ while (computerWins != 3 && playersWins !=3)
     Console.WriteLine($"player's score: {playersWins}");
 }
 Console.WriteLine(playersWins == 3 ? "player wins!" : "Computer wins!");
+

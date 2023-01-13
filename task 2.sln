@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissorsInCSharp",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "quizzGame", "quizzGame", "{10DACF0B-F6EF-4ED1-B2A0-997BA4CEA62C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizzGame", "quizzGame\quizzGame.csproj", "{666CB2F4-56D9-466D-8F84-9635816BFA1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizzGame", "quizzGame\quizzGame.csproj", "{666CB2F4-56D9-466D-8F84-9635816BFA1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
