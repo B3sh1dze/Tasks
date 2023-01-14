@@ -24,3 +24,4 @@ for(int i = 0; i < questions.Length; i++)
     }
 }
 Console.WriteLine($"Final score is: {counter} out of {questions.Length}");
+
