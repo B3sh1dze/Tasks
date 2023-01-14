@@ -1,62 +1,4 @@
-﻿////task 1
-//Console.Write("Input first number: ");
-//int num1 = Convert.ToInt32(Console.ReadLine());
-//Console.Write("Input second number: ");
-//int num2 = Convert.ToInt32(Console.ReadLine());
-
-//if(num1 == num2)
-//{
-//    Console.WriteLine("they are equal!");
-//}
-//else
-//{
-//    Console.WriteLine("they aren't equal");
-//}
-
-//// Task 2
-//Console.Write("Enter the number: ");
-//int num = Convert.ToInt32(Console.ReadLine());
-
-//if(num % 2 == 0)
-//{
-//    Console.WriteLine("This number is even. ");
-//}
-//else
-//{
-//    Console.WriteLine("This number is odd.");
-//}
-
-////task 3
-//Console.Write("Enter the number: ");
-//int num = Convert.ToInt32(Console.ReadLine());
-
-//if(num > 0)
-//{
-//    Console.WriteLine("This number is positive.");
-//}
-//else if(num < 0)
-//{
-//    Console.WriteLine("This number is negative.");
-//}
-//else
-//{
-//    Console.WriteLine("This number equals to 0.");
-//}
-
-//// task 13
-//Console.Write("Enter the number: ");
-//int a = Convert.ToInt32(Console.ReadLine());
-
-//for (int i = 0; i < 5; i++)
-//{
-//    for (int j = 0; j < 3; j++)
-//    {
-//            Console.Write(a); 
-//    }
-//    Console.WriteLine();
-//}
-
-//swaping 2 numbers
+﻿//swaping 2 numbers
 //int num1 = 56;
 //int num2 = 45;
 //(num1, num2) = (num2, num1);
@@ -134,7 +76,6 @@
 //    Console.Write(c + " ");
 //}
 
-
 //// w3resources string exercises task 1
 //Console.Write("Please input string you want: ");
 //string str = Console.ReadLine();
@@ -193,19 +134,18 @@
 //    Console.WriteLine("The length of these strings aren't equal.");
 //}
 
-
 //// string concatenation
 //string firstName = "Guro";
 //string lastName = " Beshidze";
 //string fullName = string.Concat(firstName, lastName);
 //Console.WriteLine(fullName);
 
-// substring function
-string name = "Guro beshidze";
-int index = name.IndexOf('b');
-string lastName = name.Substring(index, 3);
-string lastName1 = name.Substring(3, index);
-string lastName2 = name.Substring(index);
-Console.WriteLine(lastName);
-Console.WriteLine(lastName1);
-Console.WriteLine(lastName2);
+//// substring function
+//string name = "Guro beshidze";
+//int index = name.IndexOf('b');
+//string lastName = name.Substring(index, 3);
+//string lastName1 = name.Substring(3, index);
+//string lastName2 = name.Substring(index);
+//Console.WriteLine(lastName);
+//Console.WriteLine(lastName1);
+//Console.WriteLine(lastName2);

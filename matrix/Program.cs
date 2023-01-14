@@ -1,4 +1,4 @@
-﻿int[,] matrix = new int[4, 4] { { 1, 2, 3, 4 },
+﻿int[,] matrix = new int[4, 4] {  { 1, 2, 3, 4 },
                                  { 5, 6, 4, 8 },
                                  { 7, 3, 8, 7 },
                                  { 4, 8, 9, 3 } };
@@ -52,4 +52,3 @@ for (int i = 0; i < array3.GetLength(0); i++)
     }
     Console.WriteLine();
 }
-
