@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task 2", "task 2\task 2.csproj", "{94DA9137-9E2E-475F-9EF0-9A4013BC2AFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "task 3", "task 3", "{A162E86B-611F-4FE6-85BC-7DD493598028}"
+	ProjectSection(SolutionItems) = preProject
+		quizzGame.cs = quizzGame.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task 3.1", "task 3.1\task 3.1.csproj", "{4B8D882C-3BFB-483E-AD9A-235E44AA360A}"
 EndProject
@@ -22,8 +25,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrix", "matrix\matrix.csproj", "{9047B1FA-B9DC-4BC4-9985-995C3531820D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{7E9F1C46-5B75-4D6A-9071-58CA84E48374}"
+	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project", "project\project.csproj", "{0878C52A-6D88-458C-A3AA-6177EAFBBCD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "project", "project\project.csproj", "{0878C52A-6D88-458C-A3AA-6177EAFBBCD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
