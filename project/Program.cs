@@ -69,7 +69,4 @@
         
     }
 
-internal class RockPAperScissor
-{ 
-}
 
