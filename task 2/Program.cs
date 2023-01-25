@@ -117,7 +117,7 @@
 
 
 //// task 10
-//Console.Write("enter size: ");
+//Console.Write("enter number: ");
 //int num = Convert.ToInt32(Console.ReadLine());
 
 
@@ -131,17 +131,34 @@
 //}
 
 
-// task 11
-Console.Write("enter size: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+//// task 11
+//Console.Write("enter number: ");
+//int num1 = Convert.ToInt32(Console.ReadLine());
 
 
-for (int i = 1; i <= num1; i++)
-{
-    for (int j = 1; j <= i; j++)
-    {
-        Console.Write(i + " ");
-    }
-    Console.WriteLine();
-}
+//for (int i = 1; i <= num1; i++)
+//{
+//    for (int j = 1; j <= i; j++)
+//    {
+//        Console.Write(i + " ");
+//    }
+//    Console.WriteLine();
+//}
 
+//// how to read text file
+//string line;
+//string fileName = "file.txt";
+//StreamReader sr = new StreamReader(fileName);
+//line = sr.ReadLine();
+//while (line != null)
+//{
+//    Console.WriteLine(line);
+//    line = sr.ReadLine();
+//}
+//sr.Close();
+
+
+//// reading text file using FIle class
+//string fileName = "C:\\Users\\99559\\Desktop\\wignebi\\file.txt";
+//string textFile = File.ReadAllText(fileName);
+//Console.WriteLine(textFile);
