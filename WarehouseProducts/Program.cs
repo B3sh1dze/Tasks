@@ -1,4 +1,6 @@
 ﻿using Warehousee;
+
+
 class Program
 {
     public static void Main(string[] args)
@@ -11,4 +13,3 @@ class Program
         warehouse.ChoiceInMenu();
     }
 }
-

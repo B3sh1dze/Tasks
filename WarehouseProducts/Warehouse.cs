@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
+
 namespace Warehousee
 {
     public class Warehouse
@@ -71,7 +72,7 @@ namespace Warehousee
         }
         public bool IsProductPriceAndStockValid(double price, int stock)
         {
-            if(price <= 0 || stock < 0)
+            if (price <= 0 || stock < 0)
             {
                 return false;
             }
@@ -131,19 +132,19 @@ namespace Warehousee
                 i++;
             }
             var categoryChoice = Console.ReadKey().Key;
-            if(categoryChoice == ConsoleKey.D1)
+            if (categoryChoice == ConsoleKey.D1)
             {
                 return "Dry Food";
             }
-            else if(categoryChoice == ConsoleKey.D2)
+            else if (categoryChoice == ConsoleKey.D2)
             {
                 return "Diary";
             }
-            else if(categoryChoice == ConsoleKey.D3)
+            else if (categoryChoice == ConsoleKey.D3)
             {
                 return "Sports Inventory";
             }
-            else if(categoryChoice == ConsoleKey.D4)
+            else if (categoryChoice == ConsoleKey.D4)
             {
                 return "Beverages";
             }
@@ -202,3 +203,4 @@ namespace Warehousee
         }
     }
 }
+
