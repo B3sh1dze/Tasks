@@ -7,28 +7,28 @@ using System.Threading.Tasks;
 
 namespace Warehousee
 {
-    public class Products : Warehouse
+    public class Product
     {
         public string Name { get; set; }
         public string Category { get; set; }
         public double Price { get; set; } = new Random().NextDouble() * 22 + 3;
         public int Stock { get; set; } = new Random().Next(5, 30);
         public List<string> PossibleCategories = new List<string> { "Dry Food", "Diary", "Sports Inventory", "Beverages" };
-        public Products()
+        public Product()
         {
 
         }
-        public Products(string name, string category)
+        public Product(string name, string category)
         {
             Name = name;
             Category = category;
         }
-        public Products(double price, int stock)
+        public Product(double price, int stock)
         {
             Price = price;
             Stock = stock;
         }
-        public Products(string name, string category, double price, int stock)
+        public Product(string name, string category, double price, int stock)
         {
             Name = name;
             Category = category;
@@ -55,15 +55,16 @@ namespace Warehousee
                 "Diary",
                 "Beverages"
             };
-            var products = new List<Products>();
+            var products = new List<Product>();
             for (int i = 0; i < productNames.Count; i++)
             {
-                var product = new Products()
+                var product = new Product()
                 {
                     Name = productNames[i],
                     Category = productCategory[i],
                 };
-                ProductsList.Add(product);
+                var store = new Warehouse();
+                store.Products.Add(product);
             }
         }
         public override string ToString()

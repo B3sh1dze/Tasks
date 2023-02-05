@@ -10,7 +10,7 @@ namespace Warehousee
 {
     public class Warehouse
     {
-        public List<Products> ProductsList { get; set; } = new List<Products>();
+        public List<Product> Products { get; set; } = new List<Product>();
         public bool IsProductNameValid(string name)
         {
             if (name == null)
@@ -29,7 +29,7 @@ namespace Warehousee
             {
                 return false;
             }
-            foreach (var item in ProductsList)
+            foreach (var item in Products)
             {
                 if (name == item.Name)
                 {
@@ -38,7 +38,7 @@ namespace Warehousee
             }
             return true;
         }
-        public void RegisterProducts()
+        public void RegisterProduct()
         {
             Console.Write("Please enter products name: ");
             var name = Console.ReadLine();
@@ -54,8 +54,8 @@ namespace Warehousee
                 var isPriceAndStockCorrect = IsProductPriceAndStockValid(price, stock);
                 if (isPriceAndStockCorrect)
                 {
-                    var product = new Products(name, category, price, stock);
-                    ProductsList.Add(product);
+                    var product = new Product(name, category, price, stock);
+                    Products.Add(product);
                     Console.WriteLine();
                     Console.WriteLine("You successfuly added product: ");
                     Console.WriteLine(product);
@@ -84,7 +84,7 @@ namespace Warehousee
             ShowAllProducts();
             Console.Write("Choose product you want to Change: ");
             var userChoice = Convert.ToInt32(Console.ReadLine());
-            var usersChoice = ProductsList[userChoice - 1];
+            var usersChoice = Products[userChoice - 1];
             Console.WriteLine("You chose: ");
             Console.WriteLine(usersChoice);
             Console.Write("Enter new Price: ");
@@ -102,8 +102,8 @@ namespace Warehousee
             ShowAllProducts();
             Console.Write("Choose product you want to remove: ");
             var userChoice = Convert.ToInt32(Console.ReadLine());
-            var usersChoice = ProductsList[userChoice - 1];
-            ProductsList.Remove(usersChoice);
+            var usersChoice = Products[userChoice - 1];
+            Products.Remove(usersChoice);
             Console.Clear();
             Console.WriteLine("You removed: ");
             Console.WriteLine(usersChoice);
@@ -113,7 +113,7 @@ namespace Warehousee
         {
             Console.Clear();
             int i = 1;
-            foreach (var item in ProductsList)
+            foreach (var item in Products)
             {
                 Console.Write(i + ". ");
                 Console.WriteLine(item.ToString());
@@ -123,7 +123,7 @@ namespace Warehousee
         public string ChooseCategory()
         {
             Console.WriteLine("Please choose products category: ");
-            var product = new Products();
+            var product = new Product();
             int i = 1;
             foreach (var item in product.PossibleCategories)
             {
@@ -171,7 +171,7 @@ namespace Warehousee
                 if (choice == ConsoleKey.D1)
                 {
                     Console.WriteLine();
-                    RegisterProducts();
+                    RegisterProduct();
                 }
                 else if (choice == ConsoleKey.D2)
                 {
