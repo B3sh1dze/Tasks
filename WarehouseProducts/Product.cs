@@ -13,6 +13,8 @@ namespace Warehousee
         public string Category { get; set; }
         public double Price { get; set; } = new Random().NextDouble() * 22 + 3;
         public int Stock { get; set; } = new Random().Next(5, 30);
+        public List<Product> Products { get; set; } = new List<Product>();
+
         public List<string> PossibleCategories = new List<string> { "Dry Food", "Diary", "Sports Inventory", "Beverages" };
         public Product()
         {
@@ -65,6 +67,7 @@ namespace Warehousee
                 };
                 var store = new Warehouse();
                 store.Products.Add(product);
+                Products.Add(product);
             }
         }
         public override string ToString()
