@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Homework_Methods_
+namespace Warehousee
 {
     public class Warehouse
     {
