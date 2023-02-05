@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture 7", "lecture 7", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lecture 7", "lecture 7\lecture 7.csproj", "{F9C2BB9C-8D51-4289-A711-D0B24143E7C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework(Methods)", "Homework(Methods)\Homework(Methods).csproj", "{DE28E8EB-E313-4ADA-AFE8-16452225CD34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehousee", "Homework(Methods)\Warehousee.csproj", "{DE28E8EB-E313-4ADA-AFE8-16452225CD34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
