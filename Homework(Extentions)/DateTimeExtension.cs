@@ -41,9 +41,5 @@ namespace Homework_Extentions_
             DateTime lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
             return lastDayOfMonth;
         }
-        public static void EndOfMonth()
-        {
-
-        }
     }
 }

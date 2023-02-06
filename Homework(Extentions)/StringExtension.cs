@@ -42,13 +42,15 @@ namespace Homework_Extentions_
         }
         public static void CalculateHash(this string str)
         {
-            int result;
-            result = str.GetHashCode();
-            Console.WriteLine($"String : {str} and HashCode: {result}");
-        }
-        public static void Encript(string key, string iv)
-        {
+                //string input = "The quick brown fox jumps over the lazy dog";
+                byte[] inputBytes = Encoding.UTF8.GetBytes(str);
 
+                using (SHA256 hash = SHA256.Create())
+                {
+                    byte[] hashBytes = hash.ComputeHash(inputBytes);
+                    string hashString = BitConverter.ToString(hashBytes).Replace("-", "");
+                    Console.WriteLine(hashString);
+                }  
         }
         //public static string Encrypt(string plainText, string key, string iv)
         //{

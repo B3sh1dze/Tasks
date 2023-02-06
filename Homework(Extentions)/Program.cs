@@ -13,7 +13,7 @@ class Program
         //{
         //    Console.Write(tempArr[i] + ", ");
         //}
-        //StringExtension.CalculateHash("sha256");
+        StringExtension.CalculateHash("sha256");
 
         //string plainText = "secret message";
         //string key = "very secret key";
@@ -35,9 +35,8 @@ class Program
         //Console.WriteLine(time.Min(DateTime.Now.AddDays(3))); 
         //DateTime time = DateTime.Now.AddDays(4);
         //Console.WriteLine(time.Min(DateTime.Now.AddDays(3)));
-        var time = DateTime.Now;
-        Console.WriteLine(time.BeginingOfMonth());
         //var time = DateTime.Now;
-        Console.WriteLine(time.EndingOfMonth());
+        //Console.WriteLine(time.BeginingOfMonth());
+        //Console.WriteLine(time.EndingOfMonth());
     }
 }
